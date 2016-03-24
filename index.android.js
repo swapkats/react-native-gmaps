@@ -39,7 +39,7 @@ let MapView = requireNativeComponent(gmaps.name, gmaps);
 class RNGMaps extends Component {
   constructor (props) {
     super(props);
-    
+
     this._listeners = {
       mapError: null,
       mapChange: null,
@@ -88,7 +88,7 @@ componentDidMount () {
       this.setState({ zoomOnMarkers: bool||true });
     });
   }
-
+  
   updateMarkers (markers) {
     let newMarkers = [];
     for (var i = 0; i < markers.length; i++) {
@@ -119,6 +119,9 @@ componentDidMount () {
   }
 
   render () {
+
+    return null;
+
     return ( <MapView
       { ...this.props }
       markers={ this.state.markers }
