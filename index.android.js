@@ -115,12 +115,9 @@ componentDidMount () {
     if(this._diffMarkers(nextProps.markers, this.state.markers)) {
       this.updateMarkers(nextProps.markers);
     }
-    console.log('clickMarker:' + nextProps.clickMarker);
   }
 
   render () {
-
-    return null;
 
     return ( <MapView
       { ...this.props }
